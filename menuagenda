@@ -2,6 +2,7 @@ echo "1) Mostrar los nombres"
 echo "2) Mostrar telefonos"
 echo "3) Mostrar la edad"
 echo "4) Mostrar la localidad"
+echo "5) Mostrar la fecha y hora"
 echo "Escoja una opcion"
 read a
 case $a in
@@ -9,6 +10,7 @@ case $a in
 2) cut -f2 -d";" /home/asir/Escritorio/agenda.txt;;
 3) cut -f3 -d";" /home/asir/Escritorio/agenda.txt;;
 4) cut -f4 -d";" /home/asir/Escritorio/agenda.txt;;
-*) echo "Error: Inserte una de las opciones";;
+5) time;;
+*) echo "Error: Inserte una de las opciones"
 esac
    
